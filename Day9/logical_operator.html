@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    var id = prompt('아이디를 입력해주세요');
+    var pwd = prompt('비밀번호를 입력해주세요');
+    if (id === 'blanc' && pwd === 'blanc') {
+        alert('로그인 하셨습니다. ' + id + '님 반갑습니다.');
+    } else {
+        alert('아이디와 비밀번호를 다시 확인해주세요.');
+    }
+
+    if (id === 'blanc' || id === 'taeun' || id === 'tu') {
+        alert('인증 O');
+    } else {
+        alert('인증 X');
+    }
+
+    if (!true && !true) {
+        alert(1);
+    }
+    if (!false && !true) {
+        alert(2);
+    }
+    if (!true && !false) {
+        alert(3);
+    }
+    if (!false && !false) {
+        alert(4);
+    }
+    </script>
+</body>
+
+</html>
