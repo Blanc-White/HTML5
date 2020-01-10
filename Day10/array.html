@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+    var member = ['egoing', 'k8805', 'sorialgi']
+    alert(member[0]);
+    alert(member[1]);
+    alert(member[2]);
+
+    function get_members() {
+        return ['egoing', 'k8805', 'sorialgi'];
+    }
+    members = get_members();
+    // members.length는 배열에 담긴 값의 숫자를 알려준다. 
+    for (i = 0; i < members.length; i++) {
+        // members[i].toUpperCase()는 members[i]에 담긴 문자를 대문자로 변환해준다.
+        document.write(members[i].toUpperCase());
+        document.write('<br />');
+    }
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.push('f');
+    alert(li);
+
+    li = li.concat(['g', 'h']);
+    alert(li);
+
+    li.unshift('z');
+    alert(li);
+
+    li.splice(2, 0, 'B');
+    alert(li);
+
+    var li = ['a', 'b', 'c', 'd', 'e'];
+    li.shift();
+    alert(li);
+
+    li.pop();
+    alert(li);
+
+    li.sort();
+    alert(li);
+
+    li.reverse();
+    alert(li);
+    </script>
+</body>
+
+</html>
